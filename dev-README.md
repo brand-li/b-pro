@@ -28,11 +28,13 @@ Install Node
 ```
 
 Install the necessary npm modules and packages
+
 ```
 # npm install
-``` 
+```
 
 Set up username and email for Git commits
+
 ```
 # git config user.email "<your email>"
 # git config user.name "<your name>"
@@ -61,7 +63,7 @@ Do not commit on `master` branch (should always be synced with the latest releas
 that accumulates all the code for the next version.
 
 - Create a new branch from `development` branch: `git checkout -b branch-name origin/development`. Try to give it a descriptive name. For example:
-    * `release/X.X.X` for next releases
+  * `release/X.X.X` for next releases
     * `new/some-feature` for new features
     * `enhance/some-enhancement` for enhancements
     * `fix/some-bug` for bug fixing
@@ -74,7 +76,7 @@ that accumulates all the code for the next version.
 It's a good idea to create the Pull Request as soon as possible so everybody knows what's going on with the project
 from the PRs screen in Bitbucket.
 
-## How to release?
+## How to release
 
 Prior to release, code needs to be checked and tested by QA team. Merge all active Pull Requests into `development` branch. Build the release with `grunt build` script and send the zip files to QA.
 
